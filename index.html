@@ -9,8 +9,9 @@
 html{scroll-behavior:smooth}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#fff;color:#000;line-height:1.5;-webkit-font-smoothing:antialiased}
 header{position:sticky;top:0;z-index:100;background:#fff;text-align:center;padding:18px 20px;border-bottom:1px solid #eee;font-weight:700;letter-spacing:.45em;font-size:16px}
-.hero{height:100vh;min-height:560px;background:url('assets/blue.png') center/cover no-repeat;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
-.hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.55)}
+.hero{height:100vh;min-height:560px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.55);z-index:1}
 .hero-content{position:relative;z-index:2;padding:20px}
 .eyebrow{font-size:12px;letter-spacing:.25em;opacity:.85;margin-bottom:16px;text-transform:uppercase}
 h1{font-size:clamp(34px,7vw,64px);font-weight:800;letter-spacing:.01em;line-height:1.05}
@@ -32,6 +33,9 @@ footer a{color:#000;text-decoration:none;margin-left:14px}
 <header>CRESCITA</header>
 
 <section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="assets/video/hero.mp4" type="video/mp4">
+  </video>
   <div class="hero-content">
     <div class="eyebrow">AVAILABLE NOW</div>
     <h1>THE GROWTH<br>COLLECTION</h1>
