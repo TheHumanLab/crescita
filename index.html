@@ -9,7 +9,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:#fff;color:#000;-webkit-font-smoothing:antialiased}
-header{position:sticky;top:0;background:#fff;text-align:center;padding:18px;border-bottom:1px solid #eee;font-weight:700;letter-spacing:.45em}
+header{position:sticky;top:0;background:#fff;text-align:center;padding:18px;border-bottom:1px solid #eee;font-weight:700;letter-spacing:.45em;z-index:10}
 .hero{height:100vh;min-height:560px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden;background:#000}
 .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.55)}
@@ -32,36 +32,16 @@ footer{border-top:1px solid #eee;text-align:center;padding:36px 20px;font-size:1
 <body>
 <header>CRESCITA</header>
 
+<!-- FULL WIDTH 3-WIDE HERO -->
 <section class="hero">
-  <video autoplay muted loop playsinline poster="assets/blue.png">
-    <source src="hero.mp4" type="video/mp4">
+  <video autoplay muted loop playsinline poster="assets/cream_w.png">
+    <source src="assets/wmn.mp4" type="video/mp4">
   </video>
   <div class="hero-content">
     <div class="eyebrow">AVAILABLE NOW</div>
     <h1>THE GROWTH<br>COLLECTION</h1>
     <a href="#shop" class="btn">SHOP NOW</a>
   </div>
-/* make video edge-to-edge */
-.hero {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.hero video {
-  width: 100vw;        /* full viewport width */
-  height: auto;        /* keeps your 3-wide ratio */
-  display: block;
-  object-fit: cover;   /* fills without stretching */
-}
-
-/* optional: center your text like in your screenshot */
-.about {
-  max-width: 900px;
-  margin: 4rem auto;
-  text-align: center;
-  padding: 0 1rem;
-}
 </section>
 
 <section id="shop">
@@ -80,34 +60,11 @@ footer{border-top:1px solid #eee;text-align:center;padding:36px 20px;font-size:1
       <div class="card-label">WOMEN'S BLUE TRACKSUIT - R5 000</div>
     </div>
     <div class="card">
-      <img src="assets/cream_w.png" alt="Women's Black Tracksuit" loading="lazy">
+      <img src="assets/cream_w.png" alt="Women's Cream Tracksuit" loading="lazy">
       <div class="card-label">WOMEN'S CREAM TRACKSUIT - R5 000</div>
     </div>
-<!-- FULL WIDTH VIDEO HERO -->
-<section class="hero">
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="metadata"
-    poster="assets/cream_w.png"
-  >
-    <source src="assets/wmn.mp4" type="video/mp4">
-    Your browser does not support video.
-  </video>
+  </div> <!-- this was missing -->
 </section>
-
-<!-- YOUR TEXT SECTION (keep this below) -->
-<section class="about">
-  <div class="about-text">
-    <h2>Crescita is more than a clothing brand.</h2>
-    <p>Growth in faith. Growth in character. Growth in ambition.</p>
-    <span>Faith on Every Thread. Growth in Every Step.</span>
-  </div>
-</section>
- 
-</div>
 
 <section class="message">
   <p>Crescita is more than a clothing brand. Growth in faith. Growth in character. Growth in ambition.</p>
