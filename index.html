@@ -41,6 +41,27 @@ footer{border-top:1px solid #eee;text-align:center;padding:36px 20px;font-size:1
     <h1>THE GROWTH<br>COLLECTION</h1>
     <a href="#shop" class="btn">SHOP NOW</a>
   </div>
+/* make video edge-to-edge */
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero video {
+  width: 100vw;        /* full viewport width */
+  height: auto;        /* keeps your 3-wide ratio */
+  display: block;
+  object-fit: cover;   /* fills without stretching */
+}
+
+/* optional: center your text like in your screenshot */
+.about {
+  max-width: 900px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
 </section>
 
 <section id="shop">
@@ -62,18 +83,30 @@ footer{border-top:1px solid #eee;text-align:center;padding:36px 20px;font-size:1
       <img src="assets/cream_w.png" alt="Women's Black Tracksuit" loading="lazy">
       <div class="card-label">WOMEN'S CREAM TRACKSUIT - R5 000</div>
     </div>
-<div class="card">
-  <video>
+<!-- FULL WIDTH VIDEO HERO -->
+<section class="hero">
+  <video
     autoplay
     muted
     loop
     playsinline
     preload="metadata"
     poster="assets/cream_w.png"
+  >
     <source src="assets/wmn.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    Your browser does not support video.
   </video>
-  <div class="card-label">WOMEN'S CREAM TRACKSUIT - R5 000</div>
+</section>
+
+<!-- YOUR TEXT SECTION (keep this below) -->
+<section class="about">
+  <div class="about-text">
+    <h2>Crescita is more than a clothing brand.</h2>
+    <p>Growth in faith. Growth in character. Growth in ambition.</p>
+    <span>Faith on Every Thread. Growth in Every Step.</span>
+  </div>
+</section>
+ 
 </div>
 
 <section class="message">
